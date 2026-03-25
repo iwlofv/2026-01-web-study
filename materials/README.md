@@ -11,3 +11,4 @@
 - `student-announcement.md`: 학생용 공지문
 - `submission-guide.md`: 과제 제출 방법 안내
 - `orientation-script.md`: OT 또는 첫 시간 진행 스크립트
+- `../.github/pull_request_template.md`: 제출용 Pull Request 템플릿
