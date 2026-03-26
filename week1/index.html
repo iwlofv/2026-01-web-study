@@ -10,12 +10,37 @@
 
 <body>
   <main class="card">
-    <p class="eyebrow">2026 KOSS WEB PROJECT STUDY</p>
-    <h1>안녕하세요, 저는 ___ 입니다</h1>
-    <p class="desc">제가 만들고 싶은 사이트는 ___ 입니다.</p>
-    <p class="desc">제가 사용할 AI 도구는 ___입니다.</p>
-    <p class="desc">제 깃허브 아이디는 ___입니다.</p>
-    <button id="cheerButton">___의 계획 제출하기</button>
+    <p class="eyebrow">전역일 계산기</p>
+    <h1>물병 채우기 🚰</h1>
+    
+    <div class="input-group">
+      <label>군 구분:</label>
+      <div class="radio-group">
+        <input type="radio" id="army" name="militaryType" value="18" checked>
+        <label for="army">육군</label>
+        <input type="radio" id="navy" name="militaryType" value="20">
+        <label for="navy">해군</label>
+        <input type="radio" id="airforce" name="militaryType" value="21">
+        <label for="airforce">공군</label>
+      </div>
+    </div>
+    <div class="input-group">
+      <label for="startDate">입대일:</label>
+      <input type="date" id="startDate">
+    </div>
+    <button id="calculateBtn">계산하기</button>
+
+    <div class="result-container">
+      <p id="dischargeDateText">입대일과 군 구분을 선택해주세요.</p>
+      <p id="resultText"></p>
+      <div class="bottle-container">
+        <div class="bottle-cap"></div>
+        <div class="bottle">
+          <div class="water" id="waterLevel"></div>
+        </div>
+      </div>
+      <h2 id="percentText">0%</h2>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
